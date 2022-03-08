@@ -160,7 +160,7 @@ class SheetPresentationController: UIPresentationController, UIGestureRecognizer
     } else if isCompactVertical {
       sheetFrame = container.bounds
     } else {
-      let topInset = container.safeAreaInsets.top + 10
+      let topInset = container.safeAreaInsets.top + 200
       sheetFrame = CGRect(x: 0, y: topInset, width: container.bounds.width, height: container.bounds.height - topInset)
     }
     if hasParentSheet {
